@@ -1,0 +1,15 @@
+{
+  "name": "Nacion-ElFinancieroFix",
+  "version": "1.0",
+  "description":"Nacion-ElFinancieroFix",
+  "manifest_version": 3,
+  "background": {
+    //"service_worker": "background.js"
+  },
+  "content_scripts":[{
+	  //"matches":["http://*/*","https://*/*"],
+	  "matches":["https://www.nacion.com/*","https://www.elfinancierocr.com/*"],
+	  "js":["jquery.js","myscript.js"]
+  }],
+  "action": {}
+}
