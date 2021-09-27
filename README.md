@@ -2,6 +2,8 @@
 
 Extensión para arreglar las restricciones de la Nacion y ElFinanciero
 
+
+Link: https://github.com/wcubero/ChromeExtensionFixNacion/raw/main/ChromeExtensionFixNacion.rar
  
 
 1. Ir a: chrome://extensions/
