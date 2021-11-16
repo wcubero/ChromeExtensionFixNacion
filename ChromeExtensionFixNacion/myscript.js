@@ -9,8 +9,14 @@ try {
 		setTimeout(function () {
 
 			let href = location.href;
-		 
+						
 			if (href.includes("elfinancierocr")) {
+				
+			    data_financiero = data_financiero.replaceAll("article", "regalo").replaceAll("default_", "regalo_");													
+				document.querySelector("#main-nav > div.news-theme-navigation-container.news-theme-navigation-bar.logo-left.horizontal-links > div.nav-logo.nav-logo-left.nav-logo-show > a > img").setAttribute("style", " transform: rotate(-10deg);");				
+				document.querySelector("#main > div > div:nth-child(2) > div > article").innerHTML = data_financiero;
+				
+				
 				//Financiero	  	 	 
 				document.querySelector(".tp-modal").setAttribute("style", "display:none;");
 				document.querySelector(".tp-backdrop").setAttribute("style", "display:none;");
@@ -46,6 +52,7 @@ try {
 			let href = location.href;
 
 			if (href.includes("nacion")) {
+				 
 				//Nacion
 				//console.log(documento_original);		
 				documento_original = documento_original.replaceAll("article", "regalo").replaceAll("default_", "regalo_");
