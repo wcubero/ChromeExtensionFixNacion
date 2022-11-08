@@ -12,7 +12,8 @@ try {
 						
 			if (href.includes("elfinancierocr")) {
 				
-			    data_financiero = data_financiero.replaceAll("article", "regalo").replaceAll("default_", "regalo_");													
+			        data_financiero = data_financiero.replaceAll("article", "regalo").replaceAll("default_", "regalo_");													
+				data_financiero = data_financiero.replace(/<[^>]*>?/gm, '');
 				document.querySelector("#main-nav > div.news-theme-navigation-container.news-theme-navigation-bar.logo-left.horizontal-links > div.nav-logo.nav-logo-left.nav-logo-show > a > img").setAttribute("style", " transform: rotate(-10deg);");				
 				document.querySelector("#main > div > div:nth-child(2) > div > article").innerHTML = data_financiero;
 				
@@ -56,6 +57,7 @@ try {
 				//Nacion
 				//console.log(documento_original);		
 				documento_original = documento_original.replaceAll("article", "regalo").replaceAll("default_", "regalo_");
+				documento_original = documento_original.replace(/<[^>]*>?/gm, '');
 				document.querySelector("#main > div > div:nth-child(2) > div > article").innerHTML = documento_original;
 				document.querySelector("#main-nav > div.news-theme-navigation-container.news-theme-navigation-bar.logo-left.horizontal-links > div.nav-logo.nav-logo-left.nav-logo-show > a > img").setAttribute("style", " transform: rotate(-10deg);");
 
